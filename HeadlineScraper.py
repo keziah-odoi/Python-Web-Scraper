@@ -7,6 +7,7 @@ import requests
 newsHeadline = ""
 newsTemp = ""
 
+#******************Function to get google **************************
 def getGoogle(url):
     newURL = 'https://'+url
     source = requests.get(newURL).text
@@ -19,7 +20,7 @@ def getGoogle(url):
     global newsTemp
     newsTemp = headline
     return newsTemp
-
+#********************Function to get aljazeera ********************
 def getAljazeera(url):
     newURL = 'https://'+url
     source = requests.get(newURL).text
